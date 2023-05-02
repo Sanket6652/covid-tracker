@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+     android:layout_margin="3dp"
+      app:cardCornerRadius="3dp"
+      app:cardElevation="3dp">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAlignment="center"
+              android:gravity="center_horizontal"
+              android:text="@string/india_covid_cases"
+              android:textSize="18sp"
+              android:padding="3dp"
+              android:layout_margin="3dp"/>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="3">
+
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Cases"
+                      android:padding="4dp"
+                      android:textSize="15sp"
+                      android:textAlignment="center"
+                      android:layout_gravity="center_horizontal"
+                      android:textStyle="bold"
+                      android:textColor="@color/black"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/no_test_cases"
+                      android:id="@+id/idTVIndiacases"
+                      android:padding="4dp"
+                      android:textSize="12sp"
+                      android:textAlignment="center"
+                      android:layout_gravity="center_horizontal"
+                      android:textColor="@color/blue"/>
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/recovered"
+                      android:padding="4dp"
+                      android:textSize="15sp"
+                      android:textAlignment="center"
+                      android:layout_gravity="center_horizontal"
+                      android:textStyle="bold"
+                      android:textColor="@color/black"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/number_recoverd"
+                      android:id="@+id/idTVIndiaRecovered"
+                      android:padding="4dp"
+                      android:textSize="12sp"
+                      android:textAlignment="center"
+                      android:layout_gravity="center_horizontal"
+                      android:textColor="@color/green"/>
+
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/death"
+                      android:padding="4dp"
+                      android:textSize="15sp"
+                      android:textAlignment="center"
+                      android:layout_gravity="center_horizontal"
+                      android:textStyle="bold"
+                      android:textColor="@color/black"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/number_of_deaths"
+                      android:id="@+id/idTVIndiaDeath"
+                      android:padding="4dp"
+                      android:textSize="12sp"
+                      android:textAlignment="center"
+                      android:layout_gravity="center_horizontal"
+                      android:textColor="@color/red"/>
+
+              </LinearLayout>
+
+          </LinearLayout>
+
+
+      </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="5dp"
+      android:id="@+id/idRVStates"/>
+
+
+</LinearLayout>

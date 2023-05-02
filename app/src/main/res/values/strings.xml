@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Covid Tracker</string>
+    <string name="india_covid_cases">India Covid Cases</string>
+    <string name="no_test_cases">No test Cases</string>
+    <string name="recovered">Recovered</string>
+    <string name="number_recoverd">number recoverd</string>
+    <string name="death">Death</string>
+    <string name="number_of_deaths">Number of Deaths</string>
+    <string name="number_recovered">number_recovered</string>
+</resources>
